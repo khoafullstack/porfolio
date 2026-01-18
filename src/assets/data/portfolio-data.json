@@ -30,69 +30,80 @@
     ]
   },
   "skills": {
-    "backend": ["ASP.NET Core", "Web API", "EF Core", "Dapper", "C#", "Microservices"],
-    "database": ["SQL Server", "PostgreSQL", "Redis", "Elasticsearch"],
-    "devops": ["Docker", "Kubernetes", "CI/CD (GitHub Actions/Azure DevOps)", "Azure/AWS"],
-    "testing": ["xUnit", "NUnit", "Moq", "Swagger/OpenAPI", "K6"]
+    "Backend": ["ASP.NET Core", "Web API", "EF Core", "Dapper", "C#", "Microservices"],
+    "Frontend": ["Angular", "RxJS", "NgRx/Signals", "Standalone Components", "Micro-frontends"],
+    "Database": ["SQL Server", "PostgreSQL", "MongoDb", "Chroma"],
+    "Devops": ["Docker", "Kubernetes", "CI/CD (GitHub Actions/Azure DevOps)", "Azure/AWS"],
+    "Testing": ["xUnit", "NUnit", "Moq", "Swagger/OpenAPI", "K6"]
   },
   "projects": [
     {
-      "name": "E-Commerce Microservices Platform",
-      "problem": "Legacy monolith was unable to scale during peak traffic events.",
-      "role": "Backend Lead",
-      "techStack": [".NET 8", "RabbitMQ", "Redis", "PostgreSQL", "Docker"],
+      "name": "Core Banking Application",
+      "problem": "Core banking application is used to store all the transactions of transferring, exchanging, payment, deposit, withdrawal…of the users which come from all the client projects.A Back-end service is built to store information, be a Centralized System for Fiat Coin of owner. A system can be scalable to hundreds of millions of customers.",
+      "role": "Backend Developer",
+      "techStack": [".NET Framework 4.7.2",".Net Core 3.1", "RabbitMQ", "Redis", "MS SQL", "Postgres", "Docker", "Azure", "Azure App Service", "Azure Service Bus"],
       "impact": [
         "Reduced API latency by 40% via caching strategies.",
-        "Handled 10k+ concurrent users during Black Friday sales.",
+        "Handled 4k+ concurrent users during new Package Release.",
         "Decoupled order processing system, improving reliability to 99.9%."
       ],
-      "link": "https://github.com/example/project1"
+      "link": ""
     },
     {
-      "name": "Real-time Logistics Tracker",
-      "problem": "Lack of visibility into fleet location caused delivery delays.",
-      "role": "Full Stack Developer (.NET + Angular)",
-      "techStack": ["ASP.NET Core SignalR", "Angular", "SQL Server", "Azure Maps"],
+      "name": "Social Network Project for Pet",
+      "problem": "The application with other related tools, support, and services that pet owners and shop owners can use to  find, communicate with and interact with each other.It consists of the mobile App and the Admin Portal website",
+      "role": "Full Stack Developer (.NET + Angular + Flutter)",
+      "techStack": [".Net Core 3.1", "Angular", "Postgres", "Flutter"],
       "impact": [
-        "Enabled real-time tracking for 500+ vehicles.",
+        "Enabled real-time tracking for 500+ users at the same time",
         "Reduced customer support calls by 25% by providing self-service tracking.",
         "Optimized route calculation algorithm, saving 15% fuel costs."
       ]
     },
     {
-      "name": "Financial Reporting System",
-      "problem": "Slow generation of end-of-month reports (took 4+ hours).",
-      "role": "Backend Developer",
-      "techStack": [".NET Core", "Dapper", "SQL Stored Procedures", "Background Jobs"],
+      "name": "Financial Project",
+      "problem": "Development The financial project allows investors to pool capital and invest in cryptocurrencies. This project is built on the .Net 6 platform and Angular 16.The project requires processing and calculating the approach to handling big data with over 50,000 members.",
+      "role": "Full Stack Developer (.NET + Angular)",
+      "techStack": [".NET 6", "Dapper", "MS SQL", "Azure Functions", "EF Core"],
       "impact": [
         "Optimized SQL queries to reduce report generation time to < 10 minutes.",
         "Implemented automated background processing for heavy calculations.",
         "Ensured 100% data accuracy across millions of transaction records."
+      ]
+    },
+    {
+      "name": "SAP Extension (Desktop version)",
+      "problem": "Develop features related to the desktop version of SAP, including: modifying existing SAP forms, creating additional UDOs, and developing a win-mobile application for barcode scanning.",
+      "role": "Backend Developer",
+      "techStack": [".NET 6", "WinForms", ".NET Framework 4.7.2", "MS SQL", "SAP B1 SDK"],
+      "impact": [
+        "Develop custom UIs based on design specifications, integrated as SAP extensions for the SAP Desktop interface.",
+        "Optimize MS SQL queries for SAP Business One to be integrated into Crystal Reports.",
+        "Fine-tune T-SQL queries to improve data access speed and efficiency for SAP consulting teams."
+      ]
+    },
+    {
+      "name": "ERP Project",
+      "problem": "Develop enterprise web applications integrated with the existing SAP HANA platform; build data-driven AI applications and leverage AI technologies to optimize company workflows.",
+      "role": "Full Stack Developer (.NET + Angular + Flutter + Tauri (Rust))",
+      "techStack": [".NET 7,8,9,10", "Tauri (Rust)", ".NET Framework 4.8", "MS SQL", "SAP Service Layer"],
+      "impact": [
+        "Developed backend applications to orchestrate and manage asynchronous background tasks and recurring scheduled jobs.",
+        "Architected AI-powered applications for dynamic data retrieval, implementing strict Role-Based Access Control (RBAC) to ensure data security.",
+        "Optimized LLM operational costs by implementing efficient prompting strategies and selecting model architectures tailored to specific business requirements."
       ]
     }
   ],
   "experience": [
     {
       "role": "Senior .NET Developer",
-      "company": "Tech Solutions Inc.",
-      "period": "2023 - Present",
+      "company": "Eztek Software",
+      "period": "2021 - Present",
       "description": [
-        "Leading a team of 5 developers in migrating legacy .NET Framework apps to .NET 8.",
         "Designing cloud-native architectures on Azure.",
         "Mentoring junior developers and establishing code quality standards."
       ],
-      "techStack": [".NET 8", "Azure", "CosmosDB", "Angular"]
-    },
-    {
-      "role": "Backend Developer",
-      "company": "Global Software Corp",
-      "period": "2020 - 2023",
-      "description": [
-        "Developed high-performance RESTful APIs for fintech applications.",
-        "Integrated third-party payment gateways (Stripe, PayPal).",
-        "Implemented comprehensive unit and integration testing strategies."
-      ],
-      "techStack": [".NET Core 3.1/6", "SQL Server", "RabbitMQ", "Docker"]
+      "techStack": [".NET 5,6,7,8,9,10", "Azure", "AWS", "Angular", "Flutter", "Redis", "MS SQL", "Postgres", "..."]
     }
   ]
 }
