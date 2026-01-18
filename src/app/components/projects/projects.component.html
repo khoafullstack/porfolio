@@ -1,0 +1,37 @@
+<section class="min-h-screen flex flex-col justify-center p-8 md:p-16 border-b-4 border-black bg-white">
+  <h2 class="text-5xl md:text-7xl font-black mb-12 uppercase">Featured Projects</h2>
+
+  <div class="space-y-12">
+    @for (project of portfolio.projects(); track project.name) {
+      <div class="brutal-card relative group hover:bg-black hover:text-white transition-colors duration-300">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 border-b-2 border-current pb-2">
+          <h3 class="text-2xl md:text-3xl font-black uppercase">{{ project.name }}</h3>
+          <span class="font-mono text-sm border-2 border-current px-2 py-1 mt-2 md:mt-0">{{ project.role }}</span>
+        </div>
+        
+        <p class="text-lg font-bold mb-4 italic">"{{ project.problem }}"</p>
+        
+        <div class="mb-6">
+          <h4 class="font-bold uppercase mb-2">Impact:</h4>
+          <ul class="list-disc list-outside ml-5 space-y-1 font-mono text-sm md:text-base">
+            @for (impact of project.impact; track $index) {
+              <li>{{ impact }}</li>
+            }
+          </ul>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+          @for (tech of project.techStack; track $index) {
+            <span class="text-xs font-bold uppercase border border-current px-2 py-1">{{ tech }}</span>
+          }
+        </div>
+
+        @if (project.link) {
+          <a [href]="project.link" target="_blank" class="inline-block font-bold underline decoration-2 underline-offset-4 hover:no-underline">
+            View Project ->
+          </a>
+        }
+      </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<section class="min-h-screen flex flex-col justify-center p-8 md:p-16 border-b-4 border-black bg-white">
+  <h2 class="text-5xl md:text-7xl font-black mb-12 uppercase">Tech Stack</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Backend -->
+    <div class="brutal-card bg-black text-white">
+      <h3 class="text-xl font-bold mb-4 uppercase text-white border-b-2 border-white pb-2">Backend</h3>
+      <div class="font-mono text-lg">
+        {{ portfolio.skills().backend.join(' / ') }}
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="brutal-card">
+      <h3 class="text-xl font-bold mb-4 uppercase border-b-2 border-black pb-2">Database</h3>
+      <div class="font-mono text-lg">
+        {{ portfolio.skills().database.join(' / ') }}
+      </div>
+    </div>
+
+    <!-- DevOps -->
+    <div class="brutal-card">
+      <h3 class="text-xl font-bold mb-4 uppercase border-b-2 border-black pb-2">DevOps</h3>
+      <div class="font-mono text-lg">
+        {{ portfolio.skills().devops.join(' / ') }}
+      </div>
+    </div>
+
+    <!-- Testing -->
+    <div class="brutal-card bg-black text-white">
+      <h3 class="text-xl font-bold mb-4 uppercase text-white border-b-2 border-white pb-2">Testing & Quality</h3>
+      <div class="font-mono text-lg">
+        {{ portfolio.skills().testing.join(' / ') }}
+      </div>
+    </div>
+  </div>
+</section>
