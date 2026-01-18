@@ -1,24 +1,33 @@
 {
   "profile": {
-    "name": "Your Name",
-    "title": ".NET Developer (5 years)",
-    "valueProposition": "Building scalable, high-performance backend systems that drive business growth.",
-    "email": "contact@example.com",
+    "name": "@anhkhoadev",
+    "title": "Fullstack Developer (5 years)",
+    "valueProposition": "Developing full-cycle digital products that pair high-concurrency backend systems with optimized user journeys to fuel enterprise growth.",
+    "email": "khoava.dev@gmail.com",
     "location": "Ho Chi Minh City, Vietnam",
     "availability": "Open to opportunities",
     "socials": [
-      { "name": "GitHub", "url": "https://github.com/" },
-      { "name": "LinkedIn", "url": "https://linkedin.com/" },
-      { "name": "Email", "url": "mailto:contact@example.com" }
+      { "name": "GitHub", "url": "https://github.com/khoafullstack" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/anh-khoa-vu-106a25248/" },
+      { "name": "Email", "url": "mailto:khoava.dev@gmail.com" }
     ]
   },
   "about": {
     "summary": [
       "Deep expertise in ASP.NET Core & Distributed Systems.",
       "Proven track record in optimizing database performance.",
-      "Passionate about Clean Architecture & Domain-Driven Design."
+      "Passionate about Clean Architecture & Domain-Driven Design.",
+      "Advanced proficiency in Angular, RxJS, and sophisticated State Management (NgRx/Signals).",
+      "Expertise in crafting high-performance, modular architectures with Standalone Components & Micro-frontends."
     ],
-    "focusAreas": ["Backend Development", "System Integration", "Performance Tuning", "Cloud Architecture"]
+    "focusAreas": [
+      "Backend Development",
+      "Frontend Development",
+      "Database Design & Optimization",
+      "System Integration",
+      "Performance Tuning",
+      "Cloud Architecture"
+    ]
   },
   "skills": {
     "backend": ["ASP.NET Core", "Web API", "EF Core", "Dapper", "C#", "Microservices"],
